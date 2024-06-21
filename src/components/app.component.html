@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="ngStyle">
+</head>
+<body>
+<button appTalkative>Click me for a message</button>
+
+<app-spinning-wheel></app-spinning-wheel>
+
+<p [ngStyle]="{'color': 'red'}">{{ '' | placeholder:'No data available' }}</p>
+<p [ngClass]="{'placeholder': true}">{{ 'Short' | placeholder:'No data available' : 10 }}</p>
+</body>
+</html>
